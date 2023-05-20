@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* display: block; */
+}
+
+body {
+    background-color: #1c1c1c;
+    color: white;
+}
+
+h1 {
+    font-family: Poppins;
+}
+
+/* navbar */
+nav  {
+    background-color: #191919;
+    /* background-color: red; */
+    height: 5rem;
+}
+
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0rem 5rem;
+}
+.wrapper h1 {
+    color: orange;
+}
