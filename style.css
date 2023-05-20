@@ -13,14 +13,13 @@ h1 {
     font-family: Poppins;
 }
 
-/* navbar */
+/* NAVBAR */
 nav  {
-    background-color: #191919;
+    position: sticky;
+    background-color: #111111;
     /* background-color: red; */
     height: 5rem;
 }
-
-
 .wrapper {
     display: flex;
     align-items: center;
@@ -30,4 +29,85 @@ nav  {
 }
 .wrapper h1 {
     color: orange;
+}
+
+/* GAME DEALS */
+.deals {
+    padding: 3rem;
+    background-color: rgba(40, 39, 39, 0.3);
+    font-family: Lato;
+    margin: 0 auto;
+    display: grid;
+    width: 80vw;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.game {
+    padding:0px 2rem;
+    background-color: rgba(245, 245, 220, 0.084);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 1rem;
+    /* border: 2px solid orange; */
+
+    transition: 0.3s all ease;
+    border: 3px solid rgba(0, 0, 0, 0);
+}
+
+.game:hover {
+    border: 3px solid coral;
+}
+
+.game-title {
+    text-align: left;
+    font-weight: 800;
+    color: whitesmoke;
+    font-size: larger;
+    padding-bottom: 15px;
+    border-bottom: 2px rgba(255, 255, 255, 0.136) solid;
+}
+
+.game-pricing {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#game-worth {
+    color: rgb(134, 134, 134);
+    text-decoration: line-through;
+}
+.game-free {
+    color: greenyellow;
+}
+.game-platform {
+    border: 2px rgb(148, 148, 148) solid;
+    border-radius: 5px;
+    font-size: small;
+    height: fit-content;
+    padding: 3px;
+    margin-top: 2px;
+    color: rgb(170, 170, 170);
+}
+
+#game-claim {
+    cursor: pointer;
+    border: none;
+    color: whitesmoke;
+    width: 100%;
+    font-size: large;
+    text-transform: capitalize;
+    font-weight: 700;
+    background-color: rgb(222, 145, 0);
+    height: 2rem;
+    border-radius: 3px;
+    margin: 1rem 0;
+
+    transition: 0.3s all ease;
+}
+#game-claim:hover {
+    background-color: rgba(255, 166, 0, 0.995);
 }
